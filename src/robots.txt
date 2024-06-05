@@ -1,0 +1,3 @@
+# fully permissive for max SEO
+User-agent: *  # any user agent
+Allow: /       # root folder and everything under it

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin"> <!-- favors privacy -->
+
+  <title>Primer Websites from Doing Web Dev Project</title>
+  <meta name="description" content="Standards-compliant, accessible, SEO-friendly, and modern website template.">
+
+  <meta property="og:title"
+    content="Primer Websites are small working websites that help you get started fast and efficiently">
+  <meta property="og:description"
+    content="Primer Websites are standards-compliant, accessible, SEO-friendly and use other modern best practices to serve as a clean starting point for your own website.">
+  <meta property="og:image" content="https://github.com/images/clean-website-logo.png">
+  <meta property="og:url" content="https://yourwebsite.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Specifies the theme color for mobile browsers https://caniuse.com/?search=theme-color -->
+  <!-- <meta name="theme-color" content="#3498db"> -->
+  <meta name="robots" content="index, follow"> <!-- favors SEO -->
+
+  <link rel="icon" href="favicons/favicon.ico"> <!-- copy of /favicon.ico -->
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Clean Website Project &bullet; ⚙a &bullet; doingazure.com</h1>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#tools" aria-label="Tools">Tools</a></li>
+        <li><a href="#technologies" aria-label="Technologies">Technologies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Let's check in on Bitcoin price...</h2>
+    <form> <!-- better semantics with <form> for accessibility -->
+      <label for="btcdate">Enter date of interest (leave blank to use current price):</label>
+      <input type="date" id="btcdate" name="btcdate" required>
+      <button type="button" id="BitcoinPriceCheck">Check Bitcoin Price</button>
+      <textarea title="Bitcoin price results" id="BitcoinPriceCheckResults" name="BitcoinPriceCheckResults" rows="10"
+        cols="50"></textarea>
+    </form>
+
+    <section id="tools">
+      <h2>Validation Tools</h2>
+      <ol>
+        <li>HTML Validator from W3C (you can testing using <a href="https://validator.w3.org/#validate_by_input">"text
+            input" mode</a> or see <a href="https://validator.w3.org/">all options</a>)</li>
+        <li>CSS Validator from W3C (you can testing using <a
+            href="https://jigsaw.w3.org/css-validator/#validate_by_input">"text input" mode</a> or see <a
+            href="https://jigsaw.w3.org/css-validator/">all options</a>)</li>
+      </ol>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies used on this page</h2>
+      <ol>
+        <li>CSS Grid features (which should be <a href="https://caniuse.com/css-grid">widely supported</a>)</li>
+        <li>.vscode/extensions.json
+          <pre><code>
+          {
+            "recommendations": [
+              "ms-azuretools.vscode-azurefunctions",
+              "ms-dotnettools.csharp",
+              "ritwickdey.LiveServer"
+            ]
+          }
+        </code></pre>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>The Clean Website Project licenses this website code under the following conditions:</p>
+    <ul>
+      <li>The Clean Website Project licenses this website code under the <a
+          href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 License</a>.</li>
+      <li>The work is provided 'as is,' without any warranties (express or implied).</li>
+      <li>Neither the creator nor any distributor of the work shall be liable for any damages or other liability arising
+        from its use.</li>
+    </ul>
+    <p>Copyright © 2024 doingazure.com. Official source XXX <a
+        href="https://github.com/XXX/opinionated-swa-react-over-csharp?tab=MIT-1-ov-file">MIT license</a>.</p>
+  </footer>
+</body>
+
+</html>
